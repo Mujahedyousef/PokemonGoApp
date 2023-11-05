@@ -21,6 +21,7 @@ Logger.info('app::initExpress', 'express app init routes');
 app.get('/healthcheck', (req, res) => res.json({ name: process.env.npm_package_name, version: process.env.npm_package_version }));
 
 
+// eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
   Logger.error(err);
   res.status(StatusCode.INTERNAL_SERVER_ERROR).json({ message: err.message, stack: err.stack });
