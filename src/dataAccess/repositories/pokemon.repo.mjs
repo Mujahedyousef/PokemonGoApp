@@ -63,30 +63,4 @@ export const PokemonRepo = {
     if (!existItem) throw Error('This item is not found');
     return existItem.update(data);
   },
-  searchAndFilter: async quires => {
-    const listOfPokemons = await PokemonModel.findAll();
-
-    const type = quires?.type;
-    const evolutionStage = quires?.evolutionStage;
-    const search = quires?.search;
-
-    let filteredData = [...listOfPokemons];
-
-    if (type) filteredData = filteredData.filter(item => item.type === type);
-
-    if (evolutionStage) filteredData = filteredData.filter(item => item.evolutionStage === evolutionStage);
-
-    if (search) {
-      const lowerCaseQuery = search.toLowerCase().trim();
-      filteredData = filteredData.filter(item => {
-        return (
-          item.name?.toLowerCase().includes(lowerCaseQuery) ||
-          item.weather?.toLowerCase().includes(lowerCaseQuery) ||
-          item.type?.toLowerCase().includes(lowerCaseQuery) ||
-          item.evolutionStage?.toLowerCase().includes(lowerCaseQuery)
-        );
-      });
-    }
-    return { filteredData };
-  },
 };
