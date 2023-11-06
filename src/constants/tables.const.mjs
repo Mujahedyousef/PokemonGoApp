@@ -1,1 +1,3 @@
-export const Tables = {};
+export const Tables = {
+  Pokemon: 'Pokemons',
+};

@@ -1,8 +1,8 @@
 import { app } from './express.mjs';
 
 try {
-  app.listen(AppConfigs.port, async err => {
-    Logger.info('app::initExpress', `pokemonGo App running on port ${AppConfigs.port}`);
+  app.listen(process.env.SERVER_PORT, async err => {
+    Logger.info('app::initExpress', `pokemonGo App running on port ${process.env.SERVER_PORT}`);
     if (err) throw err;
   });
 } catch (ex) {

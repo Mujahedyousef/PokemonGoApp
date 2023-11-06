@@ -5,7 +5,7 @@ export default {
     database: process.env.DB_DATABASE,
     port: +process.env.DB_PORT,
     host: process.env.DB_HOST,
-    dialect: "postgres",
+    dialect: 'postgres',
     logging: true,
   },
   test: {
@@ -14,8 +14,8 @@ export default {
     database: process.env.DB_DATABASE,
     host: process.env.DB_HOST,
     port: +process.env.DB_PORT,
-    dialect: "sqlite",
-    storage: ":memory:",
+    dialect: 'sqlite',
+    storage: ':memory:',
     logging: true,
   },
   production: {
@@ -24,7 +24,7 @@ export default {
     database: process.env.DB_DATABASE,
     host: process.env.DB_HOST,
     port: +process.env.DB_PORT,
-    dialect: "postgres",
+    dialect: 'postgres',
     logging: true,
   },
 };

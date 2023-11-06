@@ -1,1 +1,1 @@
-export * from './pokemonGo.schema.mjs';
+export * from './pokemon.schema.mjs';
