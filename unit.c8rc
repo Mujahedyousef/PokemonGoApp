@@ -16,7 +16,8 @@
     "src/logger/morganLogger.mjs",
     "**/src/server/*.mjs",
     "**/src/routers/**/*.mjs",
-    "**/src/proxies/*.mjs"
+    "**/src/proxies/*.mjs",
+    "**/src/readFiles/*.mjs"
   ],
   "include": [
     "src/**/*.mjs"
