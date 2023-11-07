@@ -9,14 +9,9 @@
    - [Error Handler](#error-handler)
    - [CRUD Operations](#crud-operations)
    - [List](#list)
-6. [Usage](#usage)
-   - [Error Handler](#usage-error-handler)
-   - [CRUD Operations](#usage-crud-operations)
-   - [List](#usage-list)
-7. [Request Body Validation](#request-body-validation)
-8. [Authentication (if applicable)](#authentication)
-9. [Additional Information](#additional-information)
-10. [Conclusion](#conclusion)
+6. [Request Body Validation](#request-body-validation)
+7. [Additional Information](#additional-information)
+8. [Conclusion](#conclusion)
 
 ## Introduction
 Welcome to the official documentation of **PokemonGoApp**. This documentation provides an in-depth overview of our application's features, technologies, and endpoints. It is designed to help you understand how our application works and how to interact with it effectively.
@@ -85,18 +80,6 @@ docker-compose up
 
 ### List
 - **Description:** The "List" endpoint enables users to retrieve items with various query parameters, including pagination, name search, type search, and evaluation state.
-
-## Usage
-Detailed instructions and usage examples for each endpoint can be found in their respective sections.
-
-### Error Handler
-- **Usage:** [Error Handler Documentation](#usage-error-handler)
-
-### CRUD Operations
-- **Usage:** [CRUD Operations Documentation](#usage-crud-operations)
-
-### List
-- **Usage:** [List Documentation](#usage-list)
 
 ## Request Body Validation
 - **Description:** Joy validation is applied to the entire `requests.body` to ensure data integrity.
