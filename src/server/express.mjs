@@ -24,7 +24,6 @@ app.get('/healthcheck', (req, res) => res.json({ name: process.env.npm_package_n
 app.use('/pokemon', PokemonRouter);
 // eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
-  
   Logger.error(err);
   res.status(StatusCode.INTERNAL_SERVER_ERROR).json({ message: err.message, stack: err.stack });
 });
