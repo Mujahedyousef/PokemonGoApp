@@ -17,7 +17,9 @@
     "**/src/server/*.mjs",
     "**/src/routers/**/*.mjs",
     "**/src/proxies/*.mjs",
-    "**/src/readFiles/*.mjs"
+    "**/src/readFiles/*.mjs",
+    "**/src/middlewares/*.mjs",
+    ".data"
   ],
   "include": [
     "src/**/*.mjs"
