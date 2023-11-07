@@ -1,0 +1,33 @@
+{
+  "extension": [
+    ".mjs"
+  ],
+  "reporter": [
+    "text"
+  ],
+  "exclude": [
+    "**/*.spec.mjs",
+    "**/*.mock.js",
+    "dist",
+    "**/*.model.mjs",
+    "**/*.schema.mjs",
+    "src/globals.mjs",
+    "src/index.mjs",
+    "src/logger/morganLogger.mjs",
+    "**/src/server/*.mjs",
+    "**/src/routers/**/*.mjs",
+    "**/src/proxies/*.mjs",
+    "**/src/readFiles/*.mjs",
+    "**/src/middlewares/*.mjs",
+    ".data"
+  ],
+  "include": [
+    "src/**/*.mjs"
+  ],
+  "all": true,
+  "lines": 100,
+  "statements": 100,
+  "functions": 100,
+  "branches": 100,
+  "check-coverage": true
+}
