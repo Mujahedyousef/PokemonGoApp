@@ -21,9 +21,6 @@
 ## Introduction
 Welcome to the official documentation of **PokemonGoApp**. This documentation provides an in-depth overview of our application's features, technologies, and endpoints. It is designed to help you understand how our application works and how to interact with it effectively.
 
-### Purpose
-This documentation serves as a valuable resource for developers, testers, and users to understand the inner workings of **PokemonGoApp**.
-
 ## Technologies Used
 **PokemonGoApp** leverages a stack of cutting-edge technologies to deliver a robust and efficient experience:
 
@@ -38,7 +35,7 @@ Before you can start using **PokemonGoApp**, you need to set up your development
 
 ### 1. Clone the Repository
 bash
-git clone https://github.com/yourusername/PokemonGoApp.git
+git clone git@github.com:Mujahedyousef/PokemonGoApp.git
 
 
 ### 2. Install Dependencies
@@ -53,7 +50,7 @@ npm install
 Set up the PostgreSQL database and update the database configuration in the project.
 
 ### 4. Unit Testing
-Ensure you have Synom installed for unit testing. Run the unit tests to ensure code quality.
+Ensure you have Sinon installed for unit testing. Run the unit tests to ensure code quality.
 
 bash
 npm test
@@ -67,7 +64,7 @@ docker-compose up
 
 
 ## Overview
-**PokemonGoApp** is designed to efficiently import data from Excel sheets and insert it into the database. It offers a set of CRUD operations to manipulate the imported data. The application also provides a flexible search mechanism based on the query parameters you send. Additionally, it is thoroughly tested using Synom to ensure code quality and reliability.
+**PokemonGoApp** is designed to efficiently import data from Excel sheets and insert it into the database. It offers a set of CRUD operations to manipulate the imported data. The application also provides a flexible search mechanism based on the query parameters you send. Additionally, it is thoroughly tested using Sinon to ensure code quality and reliability.
 
 - **Excel Data Import:** The application allows you to upload Excel sheets, which are then processed and inserted into the database.
 
@@ -103,16 +100,6 @@ Detailed instructions and usage examples for each endpoint can be found in their
 
 ## Request Body Validation
 - **Description:** Joy validation is applied to the entire `requests.body` to ensure data integrity.
-
-## Authentication (if applicable)
-If your application involves user authentication, create a dedicated section here to explain how it works.
-
-## Additional Information
-Include any supplementary details such as:
-- API versioning (if applicable)
-- Troubleshooting tips
-- Known issues or limitations
-- Contact information for support
 
 ## Conclusion
 This documentation provides a comprehensive guide to **PokemonGoApp**. For detailed usage instructions, please refer to the corresponding sections. If you have any questions or need further assistance, please don't hesitate to reach out.
