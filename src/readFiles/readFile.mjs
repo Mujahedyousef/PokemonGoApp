@@ -11,18 +11,18 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const client = new Client({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'pokemon_db',
-  password: '1234',
-  port: 5432,
+  user: process.env.DB_USERNAME,
+  host: process.env.DB_HOST,
+  database: process.env.DB_DATABASE,
+  password: process.env.DB_PASSWORD,
+  port: +process.env.DB_PORT,
 });
 
 client.connect();
 
 const excelFilePath = path.join(__dirname, '../../pokemonGo.xlsx');
 
-async function importData() {
+export default async function readFile() {
   try {
     console.log('Start importing Date!');
 
@@ -33,7 +33,7 @@ async function importData() {
     let records = [];
 
     worksheet.eachRow({ includeEmpty: false }, (row, rowNumber) => {
-      if (rowNumber > 1) {
+      if (rowNumber > 1)
         records.push([
           row.getCell(2).value,
           row.getCell(3).value,
@@ -45,7 +45,6 @@ async function importData() {
           row.getCell(12).value,
           row.getCell(14).value,
         ]);
-      }
     });
 
     const insertQuery = `
@@ -59,10 +58,8 @@ async function importData() {
 
     console.log('Data imported successfully!');
   } catch (error) {
-    console.log('Error during importing the data:', error);
+    console.log('Error during importing the data:', error.message);
   } finally {
     client.end();
   }
 }
-
-importData();
