@@ -1,9 +1,10 @@
 import { Tables } from '../src/constants/tables.const.mjs';
 import { PokemonSchema } from '../src/dataAccess/schemas/pokemon.schema.mjs';
+import readFile from '../src/readFiles/readFile.mjs';
 
 export async function up(queryInterface) {
-  await queryInterface.createTable(Tables.Pokemon, { ...PokemonSchema });
+  return queryInterface.createTable(Tables.Pokemon, { ...PokemonSchema }).then(async () => readFile());
 }
 export async function down(queryInterface) {
-  await queryInterface.dropTable(Tables.Pokemon);
+  return queryInterface.dropTable(Tables.Pokemon);
 }
