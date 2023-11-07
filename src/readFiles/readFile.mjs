@@ -20,7 +20,7 @@ const client = new Client({
 
 client.connect();
 
-const excelFilePath = path.join(__dirname, '../pokemonGo.xlsx');
+const excelFilePath = path.join(__dirname, '../../pokemonGo.xlsx');
 
 async function importData() {
   try {

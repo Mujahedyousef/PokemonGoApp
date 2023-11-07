@@ -1,3 +1,3 @@
 export const Tables = {
-  Pokemon: 'Pokemons',
+  Pokemon: 'pokemons',
 };
