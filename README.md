@@ -75,7 +75,7 @@ docker-compose up
 
 - **Search Functionality:** The "List" endpoint supports various query parameters, enabling you to filter and search for specific records based on your criteria.
 
-- **Unit Testing:** The application is rigorously tested using Synom to ensure code quality and reliability.
+- **Unit Testing:** The application is rigorously tested using Sinon to ensure code quality and reliability.
 
 ## Endpoints
 **PokemonGoApp** offers various endpoints to facilitate specific functionalities.
